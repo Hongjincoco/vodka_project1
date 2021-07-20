@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VODKA</title>
+
+    <!-- Custom fonts for this template-->
+    <link href='{% static "vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href='{% static "css/sb-admin-2.min.css" %}' rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                <div class="sidebar-brand-icon rotate-n-45">
+                    <i class="fas fa-wine-bottle"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">VODKA</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+        
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>HOME</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+                        <a class="collapse-item active" href="#">
+                            <i class="fas fa-fw fa-file-alt"></i>
+                            <span>서비스 소개</span>
+                        </a>
+            
+                        <a class="collapse-item active" href="tourist">
+                            <i class="far fa-map"></i>
+                            <span>실시간 밀집도 안내</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            
+            
+
+            
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 py-4 text-gray-900">실시간 인구혼잡도 분석 및 데이터 제공 서비스</h1>
+
+                    <!-- <div class="row"> -->
+
+                    <div class="col-xl-15">
+
+                        <!-- Circle Buttons -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="h4 m-0 font-weight-bold text-primary" style= "text-align:center">목차</h6>
+                            </div>
+                            <div class="card-body" >
+                                <p>▣&nbsp;개요 (추진배경) <br>
+                                    &nbsp;&nbsp;&nbsp;• Pandemic으로 인한 방역지침과 개인생활방역 문제<br>
+                                    &nbsp;&nbsp;&nbsp;• 개방형 공공시설에 대한 방역관리 문제<br>
+                                    &nbsp;&nbsp;&nbsp;• 이미 구축되어 있는 공공시설 장비 사용<br>
+                                    &nbsp;&nbsp;&nbsp;• 인구혼잡도 분석 데이터 활용<br>
+                                    &nbsp;&nbsp;&nbsp;• 정확한 공공데이터 수집<br>
+                                    &nbsp;&nbsp;&nbsp;• 디지털 뉴딜사업 기여<br>
+                                    <br>
+                                    ▣&nbsp;개발 순서 <br>
+                                    &nbsp;&nbsp;&nbsp;◎ 모델탐색 &nbsp;→&nbsp;
+                                    &nbsp;&nbsp;&nbsp;◎ 알고리즘 설계 &nbsp;→&nbsp;
+                                    &nbsp;&nbsp;&nbsp;◎ 데이터 수집 &nbsp;→&nbsp;
+                                    &nbsp;&nbsp;&nbsp;◎ 서비스 구축 &nbsp;→&nbsp;
+                                    &nbsp;&nbsp;&nbsp;◎ 서비스 구현<br>
+                                    <br>
+                                    ▣&nbsp;구현 모습<br>
+
+                                </p>
+                                <!-- Circle Buttons (Default) -->
+                                <!-- <div class="mb-2">
+                                    <code>.btn-circle</code>
+                                </div> -->
+                                <!-- <a href="#" class="btn btn-primary btn-circle">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-success btn-circle">
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a href="#" class="btn btn-info btn-circle">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="btn btn-warning btn-circle">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-circle">
+                                    <i class="fas fa-trash"></i>
+                                </a> -->
+                                <!-- Circle Buttons (Small) -->
+                                <!-- <div class="mt-4 mb-2">
+                                    <code>.btn-circle .btn-sm</code>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-circle btn-sm">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-success btn-circle btn-sm">
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a href="#" class="btn btn-info btn-circle btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="btn btn-warning btn-circle btn-sm">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                    <i class="fas fa-trash"></i>
+                                </a> -->
+                                <!-- Circle Buttons (Large) -->
+                                <!-- <div class="mt-4 mb-2">
+                                    <code>.btn-circle: 버튼 원으로 바꾸기 <br> .btn-md: 버튼 크기 지정</code>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-circle btn-md">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-success btn-circle btn-md">
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a href="#" class="btn btn-info btn-circle btn-md">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="btn btn-warning btn-circle btn-md">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-circle btn-md">
+                                    <i class="fas fa-trash"></i>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <!-- video Play -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="h4 m-0 font-weight-bold text-primary" style="text-align:center" >개요(추진배경)</h6>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <style>
+                                        div1 {
+                                            width: 100%;
+                                            height: 100%;
+                                            /* border: 1px solid #003458; */
+                                        }
+                                        div1.left{
+                                            width: 40%;
+                                            float: left;
+                                            /* box-sizing: border-box; */
+                                            /* background: #8977ad; */
+                                        }
+                                        div1.right{
+                                            width: 60%;
+                                            float: right;
+                                            /* box-sizing: border-box; */
+                                            /* background: #ece6cc; */
+                                        }
+                                    </style>
+                                    <div1 class="left" >
+                                    <p>• Pandemic으로 인한 정부 방역지침과 <br>&nbsp;&nbsp;개인생활방역 준수로 피로도 상승 <br>
+                                        <br>
+                                        • 개방형 공공시설에 대한 방역관리 부실<br>
+                                        <br>
+                                        • 이미 구축되어 있는 공공시설 장비를 <br>&nbsp;&nbsp;통해 데이터 분석 및 도출<br>
+                                        <br>
+                                        • 인구혼잡도 분석을 통해 능동적 <br>&nbsp;&nbsp;대응 가능<br>
+                                        <br>
+                                        • 정확한 공공데이터 수집 가능<br>
+                                        <br>
+                                        • 디지털 뉴딜사업에 큰 도움 <br>
+                                    </p>
+                                    </div1>
+                                    
+                                    <div1 class="right" style="text-align:center">
+                                        <img width="370" height="450" src='{% static "/img/grap.png" %}' >
+                                    </div1>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+
+                    <div class="col-xl-15">
+                        <!-- canvas -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="h4 m-0 font-weight-bold text-primary" style="text-align:center">개발 순서</h6>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <style>
+                                        div1 {
+                                            width: 100%;
+                                            height: 100%;
+                                            /* border: 1px solid #003458; */
+                                        }
+                                        div1.left{
+                                            width: 30%;
+                                            float: left;
+                                            /* box-sizing: border-box; */
+                                            /* background: #8977ad; */
+                                        }
+                                        div1.right{
+                                            width: 70%;
+                                            float: right;
+                                            /* box-sizing: border-box; */
+                                            /* background: #ece6cc; */
+                                        }
+                                    </style>
+
+                                    <div1 class="left" style="text-align:center" >
+                                    <p>
+                                        <br>
+                                        <br>
+                                        모델탐색<br>
+                                        ⬇️<br>
+                                        알고리즘 설계<br>
+                                        ⬇️<br>
+                                        데이터 수집<br>
+                                        ⬇️<br>
+                                        서비스 구축<br>
+                                        ⬇️<br>
+                                        서비스 구현
+                                    </p>
+                                    </div>
+
+                                    <div1 class="right">
+                                        <style>
+                                            /* 리셋 CSS */
+                                            * {margin:0;padding:0;box-sizing:border-box;}
+                                            ul, li {list-style:none;}
+                                            
+                                            
+                                            .slidebox {max-width:700px;margin:0 auto;position:relative;}
+                                            .slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+                                            .slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;}
+                                            .slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+                                            .slidebox .slidelist .slideitem > a img {max-width:100%;}
+                                            
+                                            .slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+                                            .slidebox .slide-control [class*="control"] label.prev {left:-20px;background:skyblue url('{% static "/img/left-arrow.png" %}') center center / 50% no-repeat;}
+                                            .slidebox .slide-control [class*="control"] label.next {right:-20px;background:skyblue url('{% static "/img/right-arrow.png" %}') center center / 50% no-repeat;}
+                                            
+                                            [name="slide"] {display:none;}
+                                            #slide01:checked ~ .slidelist .slideitem {left:0;}
+                                            #slide02:checked ~ .slidelist .slideitem {left:-100%;}
+                                            #slide03:checked ~ .slidelist .slideitem {left:-200%;}
+                                            #slide04:checked ~ .slidelist .slideitem {left:-300%;}
+                                            #slide05:checked ~ .slidelist .slideitem {left:-400%;}
+                                            #slide06:checked ~ .slidelist .slideitem {left:-500%;}
+                                            #slide07:checked ~ .slidelist .slideitem {left:-600%;}
+                                            #slide08:checked ~ .slidelist .slideitem {left:-700%;}
+                                            
+                                            .slide-control [class*="control"] {display:none;}
+                                            #slide01:checked ~ .slide-control .control01 {display:block;}
+                                            #slide02:checked ~ .slide-control .control02 {display:block;}
+                                            #slide03:checked ~ .slide-control .control03 {display:block;}
+                                            #slide04:checked ~ .slide-control .control04 {display:block;}
+                                            #slide05:checked ~ .slide-control .control05 {display:block;}
+                                            #slide06:checked ~ .slide-control .control06 {display:block;}
+                                            #slide07:checked ~ .slide-control .control07 {display:block;}
+                                            #slide08:checked ~ .slide-control .control08 {display:block;}
+                                            
+                                            </style>
+                                            
+                                            
+                                            <div class="slidebox" style="text-align:center">
+                                                <input type="radio" name="slide" id="slide01" checked>
+                                                <input type="radio" name="slide" id="slide02">
+                                                <input type="radio" name="slide" id="slide03">
+                                                <input type="radio" name="slide" id="slide04">
+                                                <input type="radio" name="slide" id="slide05">
+                                                <input type="radio" name="slide" id="slide06">
+                                                <input type="radio" name="slide" id="slide07">
+                                                <input type="radio" name="slide" id="slide08">
+                                                
+                                                <ul class="slidelist">
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk1.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk2.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk3.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk4.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk5.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk6.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk7.png" %}'></a>
+                                                    </li>
+                                                    <li class="slideitem">
+                                                        <a><img width="550" height="350" src='{% static "/img/sk8.png" %}'></a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <div class="slide-control">
+                                                    <div class="control01">
+                                                        <label for="slide08" class="prev"></label>
+                                                        <label for="slide02" class="next"></label>
+                                                    </div>
+                                                    <div class="control02">
+                                                        <label for="slide01" class="prev"></label>
+                                                        <label for="slide03" class="next"></label>
+                                                    </div>
+                                                    <div class="control03">
+                                                        <label for="slide02" class="prev"></label>
+                                                        <label for="slide04" class="next"></label>
+                                                    </div>
+                                                    <div class="control04">
+                                                        <label for="slide03" class="prev"></label>
+                                                        <label for="slide05" class="next"></label>
+                                                    </div>
+                                                    <div class="control05">
+                                                        <label for="slide04" class="prev"></label>
+                                                        <label for="slide06" class="next"></label>
+                                                    </div>
+                                                    <div class="control06">
+                                                        <label for="slide05" class="prev"></label>
+                                                        <label for="slide07" class="next"></label>
+                                                    </div>
+                                                    <div class="control07">
+                                                        <label for="slide06" class="prev"></label>
+                                                        <label for="slide08" class="next"></label>
+                                                    </div>
+                                                    <div class="control08">
+                                                        <label for="slide07" class="prev"></label>
+                                                        <label for="slide01" class="next"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <!-- <img width="500" height="300" src='{% static "/img/sss.png" %}'> -->
+                                    </div1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- map circle -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="h4 m-0 font-weight-bold text-primary" style="text-align:center">구현 모습</h6>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <style>
+                                        div1 {
+                                            width: 100%;
+                                            height: 100%;
+                                            /* border: 1px solid #003458; */
+                                        }
+                                        div1.left{
+                                            width: 50%;
+                                            float: left;
+                                            /* box-sizing: border-box; */
+                                            /* background: #8977ad; */
+                                        }
+                                        div1.right{
+                                            width: 50%;
+                                            float: right;
+                                            /* box-sizing: border-box; */
+                                            /* background: #ece6cc; */
+                                        }
+                                    </style>
+
+                                    <div1 class="left" style="text-align:center">
+                                        <p>▶&nbsp;신호등 보행자&nbsp;◀</p>
+                                        <video autoplay muted controls width="500" height="300" > 
+                                            <source src='{% static "/img/video_1.mp4" %}' type="video/mp4" >
+                                        </video>
+                                    </div1>
+
+                                    <div1 class="right" style="text-align:center">
+                                        <p>▶&nbsp;밀집 인구&nbsp;◀</p>
+                                        <video autoplay muted controls width="500" height="300" > 
+                                            <source src='{% static "/img/video_2.mp4" %}' type="video/mp4" >
+                                        </video>
+                                    </div1>
+                                </div>
+            
+                            
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- </div> -->
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="vodka text-left my-auto">
+                        <i class="far fa-file-code"></i>
+                        &nbsp;<span>VODKA PROJECT 개발자 소개</span>
+                        <div>
+                            <style>
+                                div1 {
+                                    width: 100%;
+                                    height: 100%;
+                                    /* border: 1px solid #003458; */
+                                }
+                                div1.left{
+                                    width: 50%;
+                                    float: left;
+                                    /* box-sizing: border-box; */
+                                    /* background: #8977ad; */
+                                }
+                                div1.right{
+                                    width: 50%;
+                                    float: right;
+                                    /* box-sizing: border-box; */
+                                    /* background: #ece6cc; */
+                                }
+                            </style>
+
+                            <div1 class="left" style="text-align:left">
+                                <br>
+                                <i class="fas fa-user-tie"></i>
+                                &nbsp;<span>
+                                    박현우 [ 팀장 ]
+                                    <br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;아이디어 기획 및 관리<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;인공지능 모델 컨설팅
+                                </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="far fa-fw fa-envelope"></i>
+                                <span>
+                                    EMAIL&nbsp;:&nbsp;ssoai0407@gmail.com
+                                </span><br>
+                                <br>
+                                <i class="fas fa-user"></i>
+                                &nbsp;<span>
+                                    이창목 [ 팀원 ]
+                                    <br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;Computer vision 인공지능 모델 개발 담당<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;DB서버 설계
+                                </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="far fa-fw fa-envelope"></i>
+                                <span>
+                                    EMAIL&nbsp;:&nbsp;dlckdahr777@naver.com
+                                </span><br>
+                                <br>
+                                <i class="fas fa-user"></i>
+                                &nbsp;<span>
+                                    안민현 [ 팀원 ]
+                                    <br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;인공지능 모델 연구 담당<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;웹앱 서비스모델 개발 담당
+                                </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="far fa-fw fa-envelope"></i>
+                                <span>
+                                    EMAIL&nbsp;:&nbsp;dksalsgus@gmail.com
+                                </span>
+                            </div1>
+
+                            <div1 class="right" style="text-align:left">
+                                <br>
+                                <i class="fas fa-user"></i>
+                                &nbsp;<span>
+                                    김기원 [ 팀원 ]
+                                    <br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;API서버 개발<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;DB서버구축<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;전이학습 데이터 구축
+                                </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="far fa-fw fa-envelope"></i>
+                                <span>
+                                    EMAIL&nbsp;:&nbsp;kgw2514@naver.com
+                                </span><br>
+                                <br>
+                                <i class="fas fa-user"></i>
+                                &nbsp;<span>
+                                    김홍진 [ 팀원 ]
+                                    <br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;웹앱 서비스모델 구축, 디자인 담당<br>&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;֍&nbsp;Dataset 수집 담당
+                                </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="far fa-fw fa-envelope"></i>
+                                <span>
+                                    EMAIL&nbsp;:&nbsp;hongjincoco@gmail.com
+                                </span>
+                            </div1>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>VODKA &copy; Website_SERVICE_2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src='{% static "vendor/jquery/jquery.min.js" %}'></script>
+    <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}'></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src='{% static "vendor/jquery-easing/jquery.easing.min.js"%}'></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src='{% static "js/sb-admin-2.min.js"%}'></script>
+
+</body>
+
+</html>
